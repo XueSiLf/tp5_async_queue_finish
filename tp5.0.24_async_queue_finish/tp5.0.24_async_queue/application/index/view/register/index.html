@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="/static/plugins/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/plugins/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/reg.css">
+    <style>
+        div.demo{
+            padding:20px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="htmlead-container">
+    <div class="demo form-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-offset-3 col-md-6">
+                    <form class="form-horizontal" action="{:url('index/Register/doRegister')}" method="post">
+                        <span class="heading">用户注册</span>
+                        <div class="form-group">
+                            <input class="form-control" type="email" autocomplete="off" name="email" placeholder="电子邮件" />
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" autocomplete="off" name="password" placeholder="密码" />
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" autocomplete="off" name="repassword" placeholder="重复密码" />
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-default btn-block" type="submit">&nbsp;立&nbsp;即&nbsp;注&nbsp;册</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
